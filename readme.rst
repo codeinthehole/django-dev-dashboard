@@ -1,8 +1,6 @@
 Django development dashboard
 ============================
 
-http://dddash.herokuapp.com/.
-
 A status dashboard tracking some metrics of Django's development process.
 
 Setup
