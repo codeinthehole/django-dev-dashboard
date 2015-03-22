@@ -6,13 +6,17 @@ A status dashboard tracking some metrics of Django's development process.
 Setup
 -----
 
-To run locally::
+To run locally, first create a Postgres database::
+
+    createdb djdash
+
+then run::
 
     mkvirtualenv djdash
     pip install -r requirements.txt
     export TRAC_CREDS=<user:pass> # Your djangoproject.com creds.
     ./manage.py syncdb --migrate
-    ./manage.py loaddata example_data
+    ./manage.py loaddata example_data  # This can take a while to finish
     ./manage.py update_metrics
 
 To deploy onto Heroku (mostly for my future reference):
